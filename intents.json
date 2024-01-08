@@ -1,0 +1,155 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "about NDL",
+      "patterns": [
+        "What kinds of service and package do you offer?",
+        "How many services in Neurocoach Digital Lab NDL?",
+        "What type of services can I get in Neurocoach Digital Lab NDL?",
+        "What is your services?",
+        "What is Neurocoach Digital Lab NDL?",
+        "Can you explain about Neurocoach Digital Lab NDL?",
+        "What is NDL?"
+      ],
+      "responses": [
+        "Our team specializes in the treatment of neurological diseases (e.g., stroke) and mental diseases (ADHD, depression, anxiety) for both adults and children. We offer a range of services, including Brain Measurement, Test of Attentional Performance (TAP) Alertness Assessment, and Brain Training using Neurofeedback."
+      ]
+      
+    },
+    {
+      "tag": "appointment",
+      "patterns": [
+        "How to book an appointment?",
+        "I want to try a session?",
+        "How do I schedule an appointment with you?",
+        "What is your availability for appointments?",
+        "What if I need to cancel or reschedule an appointment?",
+        "How to contact with NDL staff?"
+      ],
+      "responses": [
+        "For appointment purpose, you can go to APPOINTMENT PAGE and fill up all the information or you can contact us at 014-9879956/ 03-64213580/ neurocoachdigitallab@iium.edu.my"
+      ]
+    },
+    {
+      "tag": "general",
+      "patterns": [
+        "Neurocoach Digital Lab address?"
+      ],
+      "responses": [
+        "Address: Neurocoach Digital Lab, KICT, IIUM, Jln Gombak, 50728, Wilayah Persekutuan Kuala Lumpur"
+      ]
+    },
+    {
+      "tag": "contact us",
+      "patterns": [
+        "How to contact you?",
+        "Can I have NDL Staff contact details",
+        "What is ndl contact info",
+        "How to contact with NDL Staff?",
+        "I want to contact you"
+      ],
+      "responses": [
+        "You can contact us at 014-9879956 or 03-64213580 or send email to us at neurocoachdigitallab@iium.edu.my"
+      ]
+    },
+    {
+      "tag": "about NFB",
+      "patterns": [
+        "What is neurofeedback?",
+        "Can you explain more detail about neurofeedback",
+        "What are the potential benefits of neurofeedback training, and how many sessions might be needed to see results?"
+      ],
+      "responses": [
+        "Neurofeedback is a brain training to improve concentration. The scientifically based treatment method is used in the treatment of concentration disorders, neurological as well as mental illnesses (including stroke, depression). It is suitable for children and adults.",
+        "Neurofeedback can potentially help improve various aspects of mental well-being, such as focus and stress management. The number of sessions required varies from person to person but is typically multiple sessions, often over a few weeks or months"
+      ]
+    },
+    {
+      "tag": "EEG assessment",
+      "patterns": [
+        "Reminder before EEG Assessment",
+        "What i can and cannot do before EEG Assessment",
+        "“Is there do and don't for EEG Assessment or appointment",
+        "What to do before assessment/appointment"
+      ],
+      "responses": [
+        "Before attending the EEG session, make sure you are in good health (no fever, coughing, flu, or headache). Please check with NDL staff to comply fews tasks prior to the EEG session"
+      ]
+    },
+    {
+      "tag": "FAQ 1",
+      "patterns": [
+        "Are there age restrictions for participating in EEG assessments or other NDL services?"
+      ],
+      "responses": [
+        "NDL services are often suitable for individuals of all age groups. However, specific age restrictions, if any, may vary depending on the type of assessment or service. It's best to check with NDL staff for age-related requirements for each service."
+      ]
+    },
+    {
+      "tag": "FAQ 2",
+      "patterns": [
+        "Can individuals with a history of organ transplants undergo EEG assessments?"
+      ],
+      "responses": [
+        "Yes, in most cases, having an organ transplant should not preclude someone from undergoing an EEG assessment. However, it's important to inform the EEG technician about any medical conditions or medications to ensure a safe and accurate assessment."
+      ]
+    },
+    {
+      "tag": "FAQ 3",
+      "patterns": [
+        "How long does an EEG assessment typically take, and is it uncomfortable or invasive?"
+      ],
+      "responses": [
+        " EEG assessments are usually non-invasive and painless. The duration can vary but often takes around 30 - 40 minutes. The procedure involves placing electrodes on the scalp to measure brain activity."
+      ]
+    },
+    {
+      "tag": "FAQ 4",
+      "patterns": [
+        "Are the NDL services available to individuals with specific medical conditions, such as epilepsy or neurological disorders?"
+      ],
+      "responses": [
+        "The availability of services for individuals with specific medical conditions may vary. It's recommended to consult with NDL staff to determine which services are appropriate for particular medical conditions."
+      ]
+    },
+    {
+      "tag": "FAQ 5",
+      "patterns": [
+        "What types of brainwave patterns are you monitoring during the EEG assessments, and how do these patterns relate to cognitive function or mental health?"
+      ],
+      "responses": [
+        "EEG assessments primarily focus on measuring various brainwave frequencies, including delta, theta, alpha, beta, and gamma. Each frequency band is associated with different cognitive states and mental health aspects. For instance, alpha waves are often linked to relaxation, while beta waves relate to active thinking and concentration."
+      ]
+    }
+  ]
+}
