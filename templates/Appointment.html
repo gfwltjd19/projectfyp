@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="APPOINTMENT BOOKING">
+    <meta name="description" content="">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='nicepage.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Appointment.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script class="u-script" type="text/javascript" src="/static/query.js" defer=""></script>
+    <meta name="generator" content="Nicepage 6.2.1, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"sameAs": [
+				"https://www.facebook.com/neurocoachdigitallab?mibextid=LQQJ4d",
+				"https://www.instagram.com/neurocoachdigitallabofficial/?igshid=MzRlODBiNWFlZA%3D%3D"
+		]
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Appointment">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en">
+    <header class="u-clearfix u-custom-color-3 u-header u-sticky u-sticky-d148 u-header" id="sec-e4c4">
+      <div class="u-clearfix u-sheet u-sheet-1">
+          <nav class="nav-content">
+              <div class="logo-container">
+                  <img src="{{ url_for('static', filename='images/ndllogo.png')}}" class="logo" alt="">
+              </div>
+              <ul class="nav-links">
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/templates/About.html">About</a></li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/templates/Services.html">Services</a></li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/templates/Appointment.html">Appointment</a></li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/templates/Contact.html">Contact</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+    <section class="u-clearfix u-custom-color-4 u-section-1" id="carousel_aa87">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="custom-expanded u-align-center u-container-style u-custom-color-2 u-group u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <div class="custom-expanded u-list u-list-1">
+              <div class="u-repeater u-repeater-1">
+                <div class="u-align-left u-container-style u-list-item u-radius u-repeater-item u-shape-round u-white u-list-item-1">
+                  <div class="u-container-layout u-similar-container u-container-layout-2">
+                    <h5 class="u-custom-font u-font-source-sans-pro u-text u-text-1">NDL [BRAIN TRAINING Appointment</h5><span class="u-file-icon u-icon u-text-custom-color-1 u-icon-1"><img src="{{ url_for('static', filename='images/3416094-a51d84fc.png')}}" alt=""></span>
+                    <p class="u-custom-font u-font-source-sans-pro u-text u-text-2">30 mins</p>
+                    <p class="u-custom-font u-font-source-sans-pro u-text u-text-3">In-person meeting</p><span class="u-file-icon u-icon u-text-custom-color-1 u-icon-2"><img src="{{ url_for('static', filename='images/3179068-3af41e85.png')}}" alt=""></span>
+                  </div>
+                </div>
+                <div class="u-align-left u-container-style u-list-item u-radius u-repeater-item u-shape-round u-white u-list-item-2">
+                  <div class="u-container-layout u-similar-container u-container-layout-3">
+                    <h5 class="u-custom-font u-font-source-sans-pro u-text u-text-4">NDL [EEG &amp; ALERTNESS Appointment]</h5><span class="u-file-icon u-icon u-text-custom-color-1 u-icon-3"><img src="{{ url_for('static', filename='images/3416094-a51d84fc.png')}}" alt=""></span>
+                    <p class="u-text u-text-5">90 mins</p>
+                    <p class="u-custom-font u-font-source-sans-pro u-text u-text-6">In-person meeting</p><span class="u-file-icon u-icon u-text-custom-color-1 u-icon-4"><img src="{{ url_for('static', filename='images/3179068-3af41e85.png')}}" alt=""></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="u-custom-font u-font-source-sans-pro u-text u-text-7">APPOINTMENT BOOKING</h3>
+            <div class="custom-expanded u-align-left u-form u-form-1">
+              <form action="/book_appointment" method="POST">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                        Full Name
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <input type="text"id="full-name" name="full-name" class="form-control"
+                        placeholder="Name"required>
+                  
+                    </div>
+                </div>
+                <!---->
+                <div class="form-group row">
+                  <label class="col-sm-4 col-lg-4">
+                      Phone Number
+                  </label>
+                  <div class="col-sm-8 col-lg-8">
+                      <input type="tel"id="phone" name="phone" class="form-control"
+                      placeholder="Phone Number"required>
+                  </div>
+              </div>
+              <!---->
+              <div class="form-group row">
+                <label class="col-sm-4 col-lg-4">
+                    Email Address
+                </label>
+                <div class="col-sm-8 col-lg-8">
+                    <input type="email"id="email" name="email" class="form-control"
+                    placeholder="email@address.com"required>
+                </div>
+             </div>
+             <!---->
+             <div class="form-group row">
+              <label class="col-sm-4 col-lg-4">
+                  Services
+              </label>
+              <div class="col-sm-8 col-lg-8">
+                  <select id="services" name="services" class="form-control" required>
+                      <option value="" disabled selected>Select a service</option>
+                      <option value="brain_training">Brain Training</option>
+                      <option value="eeg_alertness">EEG & Alertness</option>
+                  </select>
+              </div>
+          </div>
+             <!---->
+              <div class="form-group row">
+                  <label class="col-sm-4 col-lg-4">
+                    Date
+                  </label>
+                  <div class="col-sm-8 col-lg-8">
+                      <input type="date"id="date" name="date" class="form-control">
+                  </div>
+              </div>
+              <!---->
+              <div class="form-group row">
+                  <label class="col-sm-4 col-lg-4">
+                     Time
+                  </label>
+                  <div class="col-sm-8 col-lg-8">
+                      <input type="time"id="time" name="time" class="form-control">
+                     </div>
+              </div>
+              <!---->
+              <div class="form-group row justify-content-end">
+                  <div class="col-sm-5">
+                      <button type="submit"class="btn btn-form">
+                          Submit
+                      </button>
+                  </div>
+              </div>
+                <div class="u-form-send-message u-form-send-success" wfd-invisible="true">Booking Confirmed!
+Thank you for scheduling your appointment with us.</div>
+                <div class="u-form-send-error u-form-send-message" wfd-invisible="true">Unable to send your booking. Please fix errors then try again.</div>
+                <input type="hidden" value="" name="recaptchaResponse" wfd-invisible="true">
+                <input type="hidden" name="formServices" value="aea61287-994e-3893-3abb-825d66972d02">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <footer class="u-clearfix u-custom-color-3 u-footer" id="sec-e17c"><div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-border-1 u-border-white u-expanded-width u-line u-line-horizontal u-opacity u-opacity-50 u-line-1"></div>
+        <div class="u-social-icons u-spacing-10 u-social-icons-1">
+          <a class="u-social-url" title="facebook" target="_blank" href="https://www.facebook.com/neurocoachdigitallab?mibextid=LQQJ4d"><span class="u-icon u-social-facebook u-social-icon u-text-custom-color-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8d8e"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-8d8e"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
+      c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path></svg></span>
+          </a>
+          <a class="u-social-url" title="instagram" target="_blank" href="https://www.instagram.com/neurocoachdigitallabofficial/?igshid=MzRlODBiNWFlZA%3D%3D"><span class="u-icon u-social-icon u-social-instagram u-text-custom-color-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-e11d"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-e11d"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
+      z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
+      C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
+      c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
+          </a>
+        </div>
+        <img class="u-image u-image-default u-image-1" src="{{ url_for('static', filename='images/ndllogo.png')}}" alt="" data-image-width="1600" data-image-height="800">
+      </div></footer>
+
+            <!-- Chatbot-->
+    <div class="container">
+      <div class="chatbox">
+          <div class="chatbox__support">
+              <div class="chatbox__header">
+                  <div class="chatbox__image--header">
+                      <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                  </div>
+                  <div class="chatbox__content--header">
+                      <h4 class="chatbox__heading--header">Chat support</h4>
+                      <p class="chatbox__description--header">Hi. My name is Ain. How can I help you?</p>
+                  </div>
+              </div>
+              <div class="chatbox__messages">
+                  <div></div>
+              </div>
+              <div class="chatbox__footer">
+                  <input type="text" placeholder="Write a message...">
+                  <button class="chatbox__send--footer send__button">Send</button>
+              </div>
+          </div>
+          <div class="chatbox__button">
+              <button><script src="chatbot-deployment\static\app.js"></script><img src="{{ url_for('static', filename='images/icon chat.png') }}" /></button>
+          </div>
+      </div>
+  </div>
+  
+      <script>
+          $SCRIPT_ROOT = {{ request.script_root|tojson }};
+      </script>
+      <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+  
+</body></html>
